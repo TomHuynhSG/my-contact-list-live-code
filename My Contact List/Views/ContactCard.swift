@@ -8,33 +8,44 @@
 import SwiftUI
 
 struct ContactCard: View {
+    let contact: Contact
+    
     var body: some View {
         ZStack{
             Color("rmit-blue")
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            VStack{
-                CircleView()
-                Text("Tom Huynh")
-                    .font(.system(size: 40, weight: .bold))
-                    .foregroundColor(.white)
-                Image("rmit-logo-white")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 75)
-                Group{
-                    InfoView(text: "tomhuynh@rmit.edu.vn", imageName:
-                    "envelope.fill")
-                    InfoView(text: "0123456789", imageName:
-                    "phone.fill")
+            ScrollView {
+                VStack{
+                    MapView(myLocation: contact.locationCoordinate)
+                        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        .frame(height: 250)
+                    CircleView(image: contact.image)
+                        .offset(y: -90)
+                        .padding(.bottom, -90)
+                    Text(contact.name)
+                        .font(.system(size: 40, weight: .bold))
+                        .foregroundColor(.white)
+                    Image("rmit-logo-white")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 75)
+                    Group{
+                        InfoView(text: contact.email, imageName:
+                        "envelope.fill")
+                        InfoView(text: contact.phone, imageName:
+                        "phone.fill")
+                    }
+                    .padding()
+                    
                 }
-                .padding()
-                
             }
         }
+        .navigationTitle(contact.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    ContactCard()
+    ContactCard(contact:contacts[0])
 }

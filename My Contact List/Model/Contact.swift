@@ -7,8 +7,11 @@
 
 import Foundation
 import SwiftUI
+import MapKit
 
-struct Contact {
+
+struct Contact : Identifiable{
+    var id = UUID()
     var name: String
     var email: String
     var phone: String
@@ -17,4 +20,6 @@ struct Contact {
     var image: Image {
         Image(imageName)
     }
+    
+    var locationCoordinate: CLLocationCoordinate2D
 }
