@@ -11,6 +11,11 @@
 		B41F1B692C4DF573007C3BD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41F1B682C4DF573007C3BD5 /* ContentView.swift */; };
 		B41F1B6B2C4DF574007C3BD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41F1B6A2C4DF574007C3BD5 /* Assets.xcassets */; };
 		B41F1B6E2C4DF574007C3BD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41F1B6D2C4DF574007C3BD5 /* Preview Assets.xcassets */; };
+		B493AD992C4DF5DA0084C7AC /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493AD982C4DF5DA0084C7AC /* CircleView.swift */; };
+		B493AD9B2C4DF91F0084C7AC /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493AD9A2C4DF91F0084C7AC /* InfoView.swift */; };
+		B493AD9D2C4DFA950084C7AC /* ContactCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493AD9C2C4DFA950084C7AC /* ContactCard.swift */; };
+		B493ADA02C4DFC2C0084C7AC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493AD9F2C4DFC2C0084C7AC /* Contact.swift */; };
+		B493ADA32C4DFC8F0084C7AC /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493ADA22C4DFC8F0084C7AC /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B41F1B682C4DF573007C3BD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B41F1B6A2C4DF574007C3BD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B41F1B6D2C4DF574007C3BD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B493AD982C4DF5DA0084C7AC /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		B493AD9A2C4DF91F0084C7AC /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		B493AD9C2C4DFA950084C7AC /* ContactCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCard.swift; sourceTree = "<group>"; };
+		B493AD9F2C4DFC2C0084C7AC /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		B493ADA22C4DFC8F0084C7AC /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				B41F1B662C4DF573007C3BD5 /* My_Contact_ListApp.swift */,
-				B41F1B682C4DF573007C3BD5 /* ContentView.swift */,
+				B493ADA12C4DFC330084C7AC /* Model */,
+				B493AD9E2C4DFC180084C7AC /* Views */,
 				B41F1B6A2C4DF574007C3BD5 /* Assets.xcassets */,
 				B41F1B6C2C4DF574007C3BD5 /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				B41F1B6D2C4DF574007C3BD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B493AD9E2C4DFC180084C7AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B41F1B682C4DF573007C3BD5 /* ContentView.swift */,
+				B493AD982C4DF5DA0084C7AC /* CircleView.swift */,
+				B493AD9A2C4DF91F0084C7AC /* InfoView.swift */,
+				B493AD9C2C4DFA950084C7AC /* ContactCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B493ADA12C4DFC330084C7AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B493AD9F2C4DFC2C0084C7AC /* Contact.swift */,
+				B493ADA22C4DFC8F0084C7AC /* ModelData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B493ADA02C4DFC2C0084C7AC /* Contact.swift in Sources */,
+				B493AD9B2C4DF91F0084C7AC /* InfoView.swift in Sources */,
+				B493AD9D2C4DFA950084C7AC /* ContactCard.swift in Sources */,
+				B493AD992C4DF5DA0084C7AC /* CircleView.swift in Sources */,
 				B41F1B692C4DF573007C3BD5 /* ContentView.swift in Sources */,
 				B41F1B672C4DF573007C3BD5 /* My_Contact_ListApp.swift in Sources */,
+				B493ADA32C4DFC8F0084C7AC /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
