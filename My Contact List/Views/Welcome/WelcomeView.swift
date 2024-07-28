@@ -14,7 +14,7 @@ struct WelcomeView: View {
         ZStack {
             
             if isWelcomeActivate {
-                GreatingView(activate: $isWelcomeActivate)
+                GreetingView(activate: $isWelcomeActivate)
             } else {
                 ContactList()
             }

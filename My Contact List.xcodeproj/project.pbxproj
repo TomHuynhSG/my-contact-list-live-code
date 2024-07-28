@@ -19,6 +19,9 @@
 		B493ADA52C4DFD470084C7AC /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493ADA42C4DFD470084C7AC /* ContactRow.swift */; };
 		B493ADA72C4DFDC10084C7AC /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493ADA62C4DFDC10084C7AC /* ContactList.swift */; };
 		B493ADA92C4E017F0084C7AC /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493ADA82C4E017F0084C7AC /* MapView.swift */; };
+		B4D8E0C02C569D9C00122A4B /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = B4D8E0BF2C569D9C00122A4B /* contacts.json */; };
+		B4D8E0C42C56A26D00122A4B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8E0C32C56A26D00122A4B /* WelcomeView.swift */; };
+		B4D8E0C62C56AB9A00122A4B /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D8E0C52C56AB9A00122A4B /* GreetingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		B493ADA42C4DFD470084C7AC /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		B493ADA62C4DFDC10084C7AC /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		B493ADA82C4E017F0084C7AC /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B4D8E0BF2C569D9C00122A4B /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		B4D8E0C32C56A26D00122A4B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		B4D8E0C52C56AB9A00122A4B /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 				B493ADA42C4DFD470084C7AC /* ContactRow.swift */,
 				B493ADA62C4DFDC10084C7AC /* ContactList.swift */,
 				B493ADA82C4E017F0084C7AC /* MapView.swift */,
+				B4D8E0C72C56AD8400122A4B /* Welcome */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -103,8 +110,18 @@
 			children = (
 				B493AD9F2C4DFC2C0084C7AC /* Contact.swift */,
 				B493ADA22C4DFC8F0084C7AC /* ModelData.swift */,
+				B4D8E0BF2C569D9C00122A4B /* contacts.json */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B4D8E0C72C56AD8400122A4B /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B4D8E0C32C56A26D00122A4B /* WelcomeView.swift */,
+				B4D8E0C52C56AB9A00122A4B /* GreetingView.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B41F1B6E2C4DF574007C3BD5 /* Preview Assets.xcassets in Resources */,
+				B4D8E0C02C569D9C00122A4B /* contacts.json in Resources */,
 				B41F1B6B2C4DF574007C3BD5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,8 +201,10 @@
 				B493AD992C4DF5DA0084C7AC /* CircleView.swift in Sources */,
 				B41F1B692C4DF573007C3BD5 /* ContentView.swift in Sources */,
 				B41F1B672C4DF573007C3BD5 /* My_Contact_ListApp.swift in Sources */,
+				B4D8E0C42C56A26D00122A4B /* WelcomeView.swift in Sources */,
 				B493ADA72C4DFDC10084C7AC /* ContactList.swift in Sources */,
 				B493ADA92C4E017F0084C7AC /* MapView.swift in Sources */,
+				B4D8E0C62C56AB9A00122A4B /* GreetingView.swift in Sources */,
 				B493ADA32C4DFC8F0084C7AC /* ModelData.swift in Sources */,
 				B493ADA52C4DFD470084C7AC /* ContactRow.swift in Sources */,
 			);
