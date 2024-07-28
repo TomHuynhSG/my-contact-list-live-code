@@ -25,5 +25,6 @@ struct ContactRow: View {
         ContactRow(contact: contacts[0])
         ContactRow(contact: contacts[1])
         ContactRow(contact: contacts[2])
+        ContactRow(contact: contacts[3])
     }
 }
